@@ -19,7 +19,7 @@
     amt = $('#amount').val() *1;
     var balance = ($('#display').text() - amt) * 1;
 
-    if (balance < 0 ) {
+    if (balance < 0 ) {       //calaculates if there is a fee
       balance = balance - 50;
       $td1.text('(' + 50 + ')');
       $td3.text( '(' + amt + ')');
