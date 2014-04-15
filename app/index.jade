@@ -12,13 +12,14 @@ html(lang='en')
     h3 Balance
       #display 1000
 
-    input#amount(type="text" placeholder="Enter $ Amount")
+    div#inputs
+      input#amount(type="text" placeholder="Enter $ Amount")
 
-    button.button#deposit Deposit
-    button.button#withdraw Withdraw
+      button.button#deposit Deposit
+      button.button#withdraw Withdraw
 
   div
-    table#ledger Ledger
+    table#ledger 
       thead
         tr
           th Fee
