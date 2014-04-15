@@ -19,7 +19,6 @@
     var $td2 = $('<td>');
     var $td3 = $('<td>');
     var $td4 = $('<td>');
-
     var $tr = $('<tr>');
     var amt = 0;
     amt = $('#amount').val() *1;
@@ -39,6 +38,10 @@
     $tr.append($td1,$td2,$td3,$td4);
 
     $('#ledger > tbody').append($tr);
+
+
+    $td3.css('color','brown');
+    $td1.css('color', 'red');
 
   }
 
@@ -118,6 +121,8 @@
       $tr.append($td1,$td2,$td3,$td4);
 
       $('#ledger > tbody').append($tr);
+
+      $td2.css('color','blue');
 
 }
 
